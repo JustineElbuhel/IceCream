@@ -16,8 +16,6 @@
     <style>
         .body-background {
             background-image: url('https://i.pinimg.com/1200x/c9/90/be/c990bef9bb882f86d0220cfde8ec34ee.jpg');
-            background-position-y: -3%;
-            background-position-x: 53%;
             width: 100%;
             height: auto;
         }
@@ -30,7 +28,7 @@
         <header>
             <nav class="navbar" style="background-color: #e7ccd7;">
                 <a class="navbar-brand" href="index.html">
-                <img src="attributes/images/ice-cream-icon.png" width="50" height="50" class="d-inline-block align-center" alt="Car rental icon">
+                <img src="assets/images/ice-cream-icon.png" width="50" height="50" class="d-inline-block align-center" alt="Car rental icon">
                 Creamery Station
                 </a>
             </nav>
@@ -46,6 +44,7 @@
             <div class="col-5">
                 <div class="card">
                     <div class="m-3 text-start">
+                        <form>
 
 
                         <!-- User input -->
@@ -68,36 +67,38 @@
                         </fieldset>
 
                         <!-- Checkboxes -->
-                        <fieldset class="options mt-4">
-                            <div class="container">
-                                
-                                <p class="fs-5 fw-medium mt-2">Cup Toppings: </p>
-                                <!--* Sprinkes -->
-                                <input type="checkbox" id="sprinkles" name="sprinkles"
-                                value="sprinkles">
-                                <label for="sprinkles" class="fs-6">Sprinkles ($0.50)</label><br>
-                                
-                                <!--* Hot Fudge -->
-                                <input type="checkbox" id="fudge" name="fudge" value="fudge">
-                                <label for="fudge" class="fs-6"> Fudge ($1.25)</label><br>
+                        <div id="cupToppingsDiv">
+                            <fieldset class="options mt-4">
+                                <div class="container">
+                                    
+                                    <p class="fs-5 fw-medium mt-2">Cup Toppings: </p>
+                                    <!--* Sprinkes -->
+                                    <input type="checkbox" id="sprinkles" name="sprinkles"
+                                    value="sprinkles">
+                                    <label for="sprinkles" class="fs-6">Sprinkles ($0.50)</label><br>
+                                    
+                                    <!--* Hot Fudge -->
+                                    <input type="checkbox" id="fudge" name="fudge" value="fudge">
+                                    <label for="fudge" class="fs-6"> Fudge ($1.25)</label><br>
 
-                                <!--* Whipped cream -->
-                                <input type="checkbox" id="whippedCream" name="whippedCream"
-                                value="whippedCream">
-                                <label for="whippedCream" class="fs-6">Whipped Cream ($0.25)</label><br>
+                                    <!--* Whipped cream -->
+                                    <input type="checkbox" id="whippedCream" name="whippedCream"
+                                    value="whippedCream">
+                                    <label for="whippedCream" class="fs-6">Whipped Cream ($0.25)</label><br>
 
-                                <!--* Cherry -->
-                                <input type="checkbox" id="cherry" name="cherry"
-                                value="cherry">
-                                <label for="cherry" class="fs-6">Cherry ($0.25)</label><br>
-                            </div>
-                        </fieldset>
+                                    <!--* Cherry -->
+                                    <input type="checkbox" id="cherry" name="cherry"
+                                    value="cherry">
+                                    <label for="cherry" class="fs-6">Cherry ($0.25)</label><br>
+                                </div>
+                            </fieldset>
+                        </div>
                         
                         <!-- Calculate Total Button -->
                         <div class="d-flex justify-content-center">
                             <input class="mt-3 w-25" id="calculateTotalBtn" type="button" value="Total Cost"/>
                         </div>
-                        
+                    </form>
 
                         <!-- Display receipt -->
                         <div id="result" class="mt-3 d-flex justify-content-center">
@@ -134,6 +135,9 @@
 <!-- BOOSTRAP JAVASCRIPT LIBRARIES -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- Link JavaScript -->
+<script src="scripts/index.js"></script>
 </body>
 
 </html>
